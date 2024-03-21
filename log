@@ -75,3 +75,20 @@ exercises.c:64:7: error: variable ‘suma’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 5115a8d
+Thu 21 Mar 2024 06:02:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:69:12: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   69 |       suma = dato;
+      |            ^
+exercises.c:70:12: error: expected expression before ‘List’
+   70 |       next(List *L);
+      |            ^~~~
+exercises.c:64:7: error: variable ‘suma’ set but not used [-Werror=unused-but-set-variable]
+   64 |   int suma = 0;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a057e42
