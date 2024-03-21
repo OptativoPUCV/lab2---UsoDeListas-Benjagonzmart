@@ -2,3 +2,18 @@ Thu 21 Mar 2024 04:04:47 PM UTC:
  tests:  0|5
 total_score: 0/70
 352308e
+Thu 21 Mar 2024 05:41:42 PM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:46:4: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   46 |    for(int i = 1; i <= 10; i++)
+      |    ^~~
+exercises.c:47:42: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   47 |      push(L, (void*)malloc(sizeof(int)));)
+      |                                          ^
+exercises.c:47:42: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+d951ce6
