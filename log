@@ -126,3 +126,13 @@ arraylist.h:14:7: note: declared here
       |       ^~~~
 Compilation failed
 d1354c3
+Thu 21 Mar 2024 06:03:40 PM UTC: 
+ exercises.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:69:20: error: expected expression before ‘;’ token
+   69 |       suma += dato*;
+      |                    ^
+Compilation failed
+41693fd
