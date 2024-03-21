@@ -136,3 +136,13 @@ exercises.c:69:20: error: expected expression before ‘;’ token
       |                    ^
 Compilation failed
 41693fd
+Thu 21 Mar 2024 06:03:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:69:19: error: invalid operands to binary * (have ‘int *’ and ‘int *’)
+   69 |       suma += dato*
+      |                   ^
+Compilation failed
+b8d1ad0
