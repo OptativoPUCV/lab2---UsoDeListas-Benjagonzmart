@@ -105,3 +105,24 @@ exercises.c:70:12: error: expected expression before ‘List’
       |            ^~~~
 Compilation failed
 fcba163
+Thu 21 Mar 2024 06:02:41 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:69:13: error: expected expression before ‘=’ token
+   69 |       suma* = dato;
+      |             ^
+exercises.c:70:12: error: invalid use of incomplete typedef ‘List’
+   70 |       next(*L, dato);
+      |            ^~
+exercises.c:70:7: error: too many arguments to function ‘next’
+   70 |       next(*L, dato);
+      |       ^~~~
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:14:7: note: declared here
+   14 | void* next(List *L);
+      |       ^~~~
+Compilation failed
+d1354c3
