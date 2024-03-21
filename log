@@ -92,3 +92,16 @@ exercises.c:64:7: error: variable ‘suma’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 a057e42
+Thu 21 Mar 2024 06:02:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:69:13: error: expected expression before ‘=’ token
+   69 |       suma* = dato;
+      |             ^
+exercises.c:70:12: error: expected expression before ‘List’
+   70 |       next(List *L);
+      |            ^~~~
+Compilation failed
+fcba163
