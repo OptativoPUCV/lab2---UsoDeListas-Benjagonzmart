@@ -96,7 +96,7 @@ void eliminaElementos(List*L, int elem)
       {
         pop(L,dato);
       }
-      dato = (int*}first(L);
+      dato = (int*)first(L);
     }
  
 }
