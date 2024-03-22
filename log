@@ -747,3 +747,16 @@ exercises.c:172:16: error: invalid use of incomplete typedef ‘Stack’ {aka �
 cc1: all warnings being treated as errors
 Compilation failed
 8f6c78c
+Fri 22 Mar 2024 09:44:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:163:18: error: invalid type argument of unary ‘*’ (have ‘int’)
+  163 |         push(p1, *cadena[i]);
+      |                  ^~~~~~~~~~
+exercises.c:172:16: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  172 |           if(p1->top == NULL)
+      |                ^~
+Compilation failed
+783e281
