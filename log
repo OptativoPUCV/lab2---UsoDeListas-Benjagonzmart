@@ -1635,3 +1635,14 @@ exercises.c:169:21: error: array subscript is not an integer
       |                     ^
 Compilation failed
 5d324c0
+Fri 22 Mar 2024 10:11:31 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:165:18: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  165 |         push(P1, (void*)cadena[i]);
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+1221856
