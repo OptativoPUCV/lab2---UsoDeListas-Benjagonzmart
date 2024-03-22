@@ -2141,3 +2141,17 @@ arraylist.c:37:6: error: ‘pushFront’ defined but not used [-Werror=unused-fu
 cc1: all warnings being treated as errors
 Compilation failed
 b6ff314
+Fri 22 Mar 2024 10:51:16 PM UTC: 
+ exercises.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:169:19: error: comparison between pointer and integer [-Werror]
+  169 |         if(pop(P) != '(')
+      |                   ^~
+exercises.c:176:19: error: comparison between pointer and integer [-Werror]
+  176 |         if(pop(P) != '[')
+      |                   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+584b939

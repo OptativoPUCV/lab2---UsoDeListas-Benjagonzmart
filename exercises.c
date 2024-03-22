@@ -157,48 +157,44 @@ int parentesisBalanceados(char *cadena)
   Stack* P = create_stack();
   int i = 0;
   while(cadena[i] != '\0')
+  {
+    if(cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
     {
-      if(cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{')
+      push(P, &cadena[i]);
+    }
+    else if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+    {
+      if(cadena[i] == ')')
       {
-        push(P, &cadena[i]);
+        if(pop(P) != '(')
+        {
+          return 0;
+        }
       }
-      else if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
+      else if(cadena[i] == ']')
       {
-        if(cadena[i] == ')')
+        if(pop(P) != '[')
         {
-          if(pop(P) != '(')
-          {
-            return 0;
-          }
-          
+          return 0;
         }
-        else if(cadena[i] == ']')
-        {
-          if(pop(P) != '[')
-          {
-            return 0;
-          }
-          
-        }
-        else if(cadena[i] == '}')
-        {
-          if(pop(P) != '{')
-          {
-            return 0;
-          }
-          
-        }
-        
       }
-      i++;
-        
-      
+      else if(cadena[i] == '}')
+      {
+        if(*(char*)pop(P) != '{')
+        {
+          return 0;
+        }
+      }
+    }
+    i++;
+  }
+
   if(pop(P) != NULL)
   {
     return 0;
   }
-  return 1;
 
+  return 1; // This return statement was moved outside of the while loop
 }
 
   
