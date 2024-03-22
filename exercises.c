@@ -178,6 +178,7 @@ int parentesisBalanceados(char *cadena)
             pop(p1);
             
           }
+          i++;
           
         }
         
@@ -195,12 +196,6 @@ int parentesisBalanceados(char *cadena)
     
   }
   
-  
-  
-  
-  
-  
-  
-   
+ 
 }
 
