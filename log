@@ -1459,3 +1459,13 @@ exercises.c:165:27: error: expected expression before ‘)’ token
       |                           ^
 Compilation failed
 9086ae4
+Fri 22 Mar 2024 10:01:40 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:165:18: error: invalid type argument of unary ‘*’ (have ‘int’)
+  165 |         push(P1, *cadena[i] );
+      |                  ^~~~~~~~~~
+Compilation failed
+84027ad
