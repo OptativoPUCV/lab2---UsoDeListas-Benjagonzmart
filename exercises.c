@@ -169,10 +169,20 @@ int parentesisBalanceados(char *cadena)
       {
         if(pop(P1) == NULL)
         {
+          
           return 0;
+          
         }
+        
         i++;
+        
       }
+      
     }
+  return 1;
+  
+  
+  
 }
+
 
