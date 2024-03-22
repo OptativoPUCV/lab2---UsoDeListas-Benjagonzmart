@@ -177,7 +177,7 @@ int parentesisBalanceados(char *cadena)
       i++;
       
     }
-  return 1;
+  
   
   
   
