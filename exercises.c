@@ -92,9 +92,10 @@ void eliminaElementos(List*L, int elem)
   dato = (int*)first(L);
   while(dato != NULL)
     {
-      if ( dato == elem)
+      if(*dato == elem)
+      
       {
-        pop(L,dato);
+        pop(L,*dato);
       }
       dato = (int*)first(L);
     }
