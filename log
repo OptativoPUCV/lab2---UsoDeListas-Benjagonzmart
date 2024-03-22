@@ -215,3 +215,9 @@ stack.h:17:7: note: declared here
       |       ^~~
 Compilation failed
 2ab6fc3
+Fri 22 Mar 2024 09:16:47 PM UTC: 
+ exercises.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+ tests:  3|2
+total_score: 40/70
+54bcd05
