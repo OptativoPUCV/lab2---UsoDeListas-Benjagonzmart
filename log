@@ -1662,3 +1662,24 @@ exercises.c:164:18: error: cast to pointer from integer of different size [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 4b0904d
+Fri 22 Mar 2024 10:13:27 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:164:26: error: ‘intptr_t’ undeclared (first use in this function)
+  164 |         push(P1, (void*)(intptr_t)cadena[i]);
+      |                          ^~~~~~~~
+exercises.c:8:1: note: ‘intptr_t’ is defined in header ‘<stdint.h>’; did you forget to ‘#include <stdint.h>’?
+    7 | #include "stack.h"
+  +++ |+#include <stdint.h>
+    8 | 
+exercises.c:164:26: note: each undeclared identifier is reported only once for each function it appears in
+  164 |         push(P1, (void*)(intptr_t)cadena[i]);
+      |                          ^~~~~~~~
+exercises.c:164:35: error: expected ‘)’ before ‘cadena’
+  164 |         push(P1, (void*)(intptr_t)cadena[i]);
+      |             ~                     ^~~~~~
+      |                                   )
+Compilation failed
+a744c53
