@@ -1469,3 +1469,22 @@ exercises.c:165:18: error: invalid type argument of unary ‘*’ (have ‘int�
       |                  ^~~~~~~~~~
 Compilation failed
 84027ad
+Fri 22 Mar 2024 10:02:03 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:161:16: error: array subscript is not an integer
+  161 |   while(*cadena[i] != '\0')
+      |                ^
+exercises.c:163:17: error: array subscript is not an integer
+  163 |       if(*cadena[i] == '(')
+      |                 ^
+exercises.c:165:25: error: array subscript is not an integer
+  165 |         push(P1, *cadena[i] );
+      |                         ^
+exercises.c:168:21: error: array subscript is not an integer
+  168 |       else if(cadena[i] == ')')
+      |                     ^
+Compilation failed
+121ea7e
