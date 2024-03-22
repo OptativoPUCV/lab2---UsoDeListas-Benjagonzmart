@@ -760,3 +760,25 @@ exercises.c:172:16: error: invalid use of incomplete typedef ‘Stack’ {aka �
       |                ^~
 Compilation failed
 783e281
+Fri 22 Mar 2024 09:45:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:163:24: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  163 |         push(p1, cadena[i]);
+      |                  ~~~~~~^~~
+      |                        |
+      |                        char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:172:16: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  172 |           if(p1->top == NULL)
+      |                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+989417b
