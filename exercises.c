@@ -161,7 +161,7 @@ int parentesisBalanceados(char *cadena)
     {
       if(cadena[i] == '(')
       {
-        push(P1, cadena[i]);
+        push(P1, *cadena[i]);
         
       }
       else if(cadena[i] == ')')
@@ -176,11 +176,4 @@ int parentesisBalanceados(char *cadena)
       
     }
 
-  
-  
-  
-  
-  
- 
 }
-
