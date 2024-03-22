@@ -1616,3 +1616,22 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
 cc1: all warnings being treated as errors
 Compilation failed
 12c691a
+Fri 22 Mar 2024 10:10:02 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:161:15: error: array subscript is not an integer
+  161 |   while(cadena[i] != '\0')
+      |               ^
+exercises.c:163:16: error: array subscript is not an integer
+  163 |       if(cadena[i] == '(')
+      |                ^
+exercises.c:165:24: error: array subscript is not an integer
+  165 |         push(P1, cadena[i]);
+      |                        ^
+exercises.c:169:21: error: array subscript is not an integer
+  169 |       else if(cadena[i] == ')')
+      |                     ^
+Compilation failed
+5d324c0
